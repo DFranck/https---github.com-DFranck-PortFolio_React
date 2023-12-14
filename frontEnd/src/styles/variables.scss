@@ -1,0 +1,20 @@
+//fonts
+@font-face {
+    font-family: "neon";
+    src: url('../assets/fonts/NEON____.TTF');
+}
+
+$global-font: "font-family: -apple-system,system-ui,BlinkMacSystemFont," Segoe UI",Roboto," Helvetica Neue",Arial,sans-serif ";
+$neon-font: "neon";
+
+//colors
+
+$black: rgb(5, 2, 5);
+$white: whitesmoke;
+$gray: #9e9e9e;
+$blue: rgb(90, 187, 214);
+$shadowBlue: rgb(33, 143, 181);
+$shadowPink: rgb(156, 84, 158);
+$pink2: rgb(143, 100, 164);
+$lightBlue: rgb(234, 253, 227);
+$lightPink: rgb(251, 248, 252)

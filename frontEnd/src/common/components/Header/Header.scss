@@ -1,0 +1,15 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        margin: 3rem;
+    }
+
+    button {
+        margin: 3rem;
+    }
+}

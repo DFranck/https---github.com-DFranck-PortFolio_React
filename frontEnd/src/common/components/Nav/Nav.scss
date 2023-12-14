@@ -1,0 +1,71 @@
+@use '../../../styles/variables.scss' as var;
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+
+    a {
+        font-family: var.$neon-font;
+        color: var.$lightBlue;
+        text-shadow: 0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue;
+        font-size: 2rem;
+        font-weight: 400;
+
+        &:hover {
+            color: var.$lightPink !important;
+            text-shadow:
+                0 0 10px var.$shadowPink,
+                0 0 20px var.$shadowPink,
+                0 0 30px var.$shadowPink,
+                0 0 40px var.$shadowPink !important;
+        }
+
+        animation: neonFlicker 3s infinite;
+    }
+
+    a:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    a:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    a:nth-child(3) {
+        animation-delay: 1.1s;
+    }
+
+    a:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+}
+
+@keyframes neonFlicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow:
+            0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue;
+        color: var.$lightBlue;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}

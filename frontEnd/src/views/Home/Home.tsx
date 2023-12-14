@@ -1,9 +1,6 @@
 import React from "react";
-import { HeroBanner } from "../../components/HeroBanner/HeroBanner.tsx";
+
+import "./Home.scss";
 export const Home = () => {
-  return (
-    <>
-      <HeroBanner />
-    </>
-  );
+  return <main className="home"></main>;
 };

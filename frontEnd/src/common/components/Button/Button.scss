@@ -1,0 +1,74 @@
+@use '../../../styles/variables.scss' as var;
+
+button {
+    cursor: pointer;
+    font-family: var.$neon-font;
+    height: 80px;
+    width: 150px;
+    background: none;
+    border: 3px solid var.$lightBlue;
+    box-shadow:
+        0 0 10px var.$shadowBlue,
+        0 0 20px var.$shadowBlue,
+        0 0 30px var.$shadowBlue,
+        0 0 40px var.$shadowBlue,
+        inset 0 0 10px var.$shadowBlue,
+        inset 0 0 20px var.$shadowBlue,
+        inset 0 0 30px var.$shadowBlue,
+        inset 0 0 40px var.$shadowBlue;
+    ;
+    border-radius: 5px;
+    color: rgb(231, 238, 240);
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow:
+        0 0 10px var.$shadowBlue,
+        0 0 20px var.$shadowBlue,
+        0 0 30px var.$shadowBlue,
+        0 0 40px var.$shadowBlue;
+
+    &:hover {
+        color: var.$lightPink !important;
+        text-shadow:
+            0 0 10px var.$shadowPink,
+            0 0 20px var.$shadowPink,
+            0 0 30px var.$shadowPink,
+            0 0 40px var.$shadowPink !important;
+        box-shadow:
+            0 0 10px var.$shadowPink,
+            0 0 20px var.$shadowPink,
+            0 0 30px var.$shadowPink,
+            0 0 40px var.$shadowPink,
+            inset 0 0 10px var.$shadowPink,
+            inset 0 0 20px var.$shadowPink,
+            inset 0 0 30px var.$shadowPink,
+            inset 0 0 40px var.$shadowPink !important;
+    }
+
+    animation: neonFlickerButton 3s infinite;
+}
+
+
+@keyframes neonFlickerButton {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 10px var.$shadowBlue, 0 0 20px var.$shadowBlue, 0 0 30px var.$shadowBlue, 0 0 40px var.$shadowBlue;
+        box-shadow: 0 0 10px var.$shadowBlue, 0 0 20px var.$shadowBlue, 0 0 30px var.$shadowBlue, 0 0 40px var.$shadowBlue, inset 0 0 10px var.$shadowBlue, inset 0 0 20px var.$shadowBlue, inset 0 0 30px var.$shadowBlue, inset 0 0 40px var.$shadowBlue;
+        color: var.$lightBlue;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+        box-shadow: none;
+        color: transparent;
+    }
+}
