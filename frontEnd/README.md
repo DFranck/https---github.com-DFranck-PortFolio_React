@@ -78,6 +78,8 @@ npm install sass --save-dev
 npm install @reduxjs/toolkit
 npm install react-redux
 
+npm install react-syntax-highlighter
+
 # Any other commands you've used...
 ```
 

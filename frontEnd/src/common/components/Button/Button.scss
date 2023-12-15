@@ -1,6 +1,6 @@
 @use '../../../styles/variables.scss' as var;
 
-button {
+.button {
     cursor: pointer;
     font-family: var.$neon-font;
     height: 80px;

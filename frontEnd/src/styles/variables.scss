@@ -8,13 +8,21 @@ $global-font: "font-family: -apple-system,system-ui,BlinkMacSystemFont," Segoe U
 $neon-font: "neon";
 
 //colors
+$purBlack: #000000;
+$purWhite: #ffffff;
 
-$black: rgb(5, 2, 5);
-$white: whitesmoke;
-$gray: #9e9e9e;
-$blue: rgb(90, 187, 214);
-$shadowBlue: rgb(33, 143, 181);
-$shadowPink: rgb(156, 84, 158);
-$pink2: rgb(143, 100, 164);
+//neon colors
 $lightBlue: rgb(234, 253, 227);
-$lightPink: rgb(251, 248, 252)
+$shadowBlue: rgb(33, 143, 181);
+$lightPink: rgb(251, 248, 252);
+$shadowPink: rgb(156, 84, 158);
+
+//programmation colors
+$colorFunction: #C678DD; // Violet pour les fonctions
+$colorVariable: #E5C07B; // Jaune pour les variables
+$colorString: #98C379; // Vert pour les chaînes de caractères
+$colorKeyword: #61AFEF; // Bleu pour les mots-clés (if, for, return, etc.)
+$colorComment: #7F848E; // Gris pour les commentaires
+$colorType: #E06C75; // Rouge pour les types et les classes
+$colorNumber: #D19A66; // Orange pour les nombres
+$colorOperator: #56B6C2; // Cyan pour les opérateurs

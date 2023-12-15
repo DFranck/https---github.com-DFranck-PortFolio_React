@@ -7,12 +7,10 @@ nav {
     gap: 1rem;
 
     a {
+        animation: neonFlicker 3s infinite;
+        transition: 0.2s;
         font-family: var.$neon-font;
         color: var.$lightBlue;
-        text-shadow: 0 0 10px var.$shadowBlue,
-            0 0 20px var.$shadowBlue,
-            0 0 30px var.$shadowBlue,
-            0 0 40px var.$shadowBlue;
         font-size: 2rem;
         font-weight: 400;
 
@@ -25,11 +23,13 @@ nav {
                 0 0 40px var.$shadowPink !important;
         }
 
-        animation: neonFlicker 3s infinite;
+        &.current-view {
+            transform: translateX(50%);
+        }
     }
 
     a:nth-child(1) {
-        animation-delay: 0s;
+        animation-delay: 0.1s;
     }
 
     a:nth-child(2) {
@@ -59,7 +59,10 @@ nav {
             0 0 10px var.$shadowBlue,
             0 0 20px var.$shadowBlue,
             0 0 30px var.$shadowBlue,
-            0 0 40px var.$shadowBlue;
+            0 0 40px var.$shadowBlue,
+            0 0 50px var.$shadowBlue,
+            0 0 60px var.$shadowBlue,
+            0 0 70px var.$shadowBlue;
         color: var.$lightBlue;
     }
 

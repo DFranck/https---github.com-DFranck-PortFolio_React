@@ -1,7 +1,117 @@
+@use '../../styles/variables.scss' as var;
+
 .home {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../assets/images/test_hero_cyber.png');
-    background-position: calc(50% - 10px) 50%;
-    background-size: cover;
+    position: relative;
+    perspective: 1000px;
+
+    section {
+        cursor: pointer;
+        animation: neonFlicker 3s infinite;
+        color: var.$lightBlue;
+        position: absolute;
+        transform-origin: center;
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(var.$purBlack, $alpha: .2);
+        box-shadow:
+            0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue;
+        text-shadow:
+            0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue;
+
+        &:hover {
+            color: var.$lightPink;
+            box-shadow:
+                0 0 10px var.$shadowPink,
+                0 0 20px var.$shadowPink,
+                0 0 30px var.$shadowPink,
+                0 0 40px var.$shadowPink !important;
+            text-shadow:
+                0 0 10px var.$shadowPink,
+                0 0 20px var.$shadowPink,
+                0 0 30px var.$shadowPink,
+                0 0 40px var.$shadowPink !important;
+        }
+
+        &.github {
+            top: 70%;
+            left: 25%;
+            transform: translate(-50%, -50%)perspective(600px) rotateX(10deg) rotateY(60deg);
+            animation-delay: 0.2s;
+        }
+
+        &.linkedin {
+            top: 70%;
+            left: 75%;
+            transform: translate(-50%, -50%)perspective(600px) rotateX(10deg) rotateY(-60deg);
+            animation-delay: 0.4s;
+        }
+
+        i {
+            font-size: 5rem;
+            color: var.$lightPink;
+        }
+    }
+
+    a {
+        transition: .1s;
+        color: var.$lightPink;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 900;
+        text-shadow:
+            0 0 10px var.$shadowPink,
+            0 0 20px var.$shadowPink,
+            0 0 30px var.$shadowPink,
+            0 0 40px var.$shadowPink;
+
+        &:hover {
+            transform: translate(-50%, -50%);
+            animation: neonFlicker 3s infinite;
+        }
+    }
+
+    a:nth-child(2) {
+        top: 48%;
+
+    }
+}
+
+@keyframes neonFlicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow:
+            0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue,
+            0 0 50px var.$shadowBlue,
+            0 0 60px var.$shadowBlue,
+            0 0 70px var.$shadowBlue;
+        color: var.$lightBlue;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
 }
