@@ -100,8 +100,8 @@ export const About = () => {
           </code>
           <br />
           <code className="console">
-            `Bonjour, je suis Franck Dufournet, un Développeur Web Freelance.
-            Mon parcours dans le développement web est marqué par une série de
+            Bonjour, je suis Franck Dufournet, un Développeur Web Freelance. Mon
+            parcours dans le développement web est marqué par une série de
             formations et certifications approfondies, notamment avec
             OpenClassrooms. J'ai acquis des compétences clés en React.js,
             JavaScript, HTML5, CSS3, et TypeScript, ainsi qu'une expertise en
@@ -125,7 +125,7 @@ export const About = () => {
             une compréhension approfondie de la gestion de projet et de la
             conception UI/UX. Je suis constamment à la recherche de nouvelles
             opportunités pour appliquer mes compétences et apprendre de
-            nouvelles technologies.`
+            nouvelles technologies.
           </code>
         </pre>
       </section>

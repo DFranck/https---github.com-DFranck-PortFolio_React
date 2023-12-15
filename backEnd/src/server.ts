@@ -28,7 +28,7 @@ app.use((error: unknown, req: Request, res: Response, next: NextFunction) => {
 const PORT = process.env.PORT || 3000; // Définit le port du serveur.
 
 mongoose
-  .connect("mongodb://localhost:27017/portfolioReact") // Connecte à la base de données MongoDB locale.
+  .connect("mongodb://127.0.0.1:27017/portfolioReact") // Connecte à la base de données MongoDB locale.
   .then(() => {
     console.log("Connected to the database!"); // Log en cas de connexion réussie.
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // Lance le serveur sur le port spécifié.

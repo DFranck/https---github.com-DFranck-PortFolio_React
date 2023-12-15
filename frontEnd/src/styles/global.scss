@@ -6,9 +6,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var.$global-font
+    font-family: var.$global-font;
+    scrollbar-width: thin;
+
+    ::-webkit-scrollbar {
+        width: 12px;
+
+        &-track {
+            background: var.$shadowBlue;
+        }
+
+        &-thumb {
+            background: var.$lightPink;
+            border-radius: 5px;
+
+            &:hover {
+                background: var.$colorFunction;
+            }
+        }
+    }
 }
+
 
 body {
     overflow-x: hidden;
+
 }

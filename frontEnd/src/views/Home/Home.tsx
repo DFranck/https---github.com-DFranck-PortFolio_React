@@ -1,8 +1,8 @@
 import React from "react";
-
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import { Hero } from "../../common/components/Hero/Hero";
+
 export const Home = () => {
   const title = {
     h2: "Franck Dufournet",

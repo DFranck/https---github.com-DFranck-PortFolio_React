@@ -1,0 +1,9 @@
+.cards-projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-project {
+        width: 30%;
+        height: 30%;
+    }
+}
