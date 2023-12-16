@@ -19,11 +19,12 @@
     }
 
     section {
+        overflow: auto;
         position: absolute;
         top: 55.5%;
         left: 50%;
         transform: translate(-50%, -45%) scale(1);
-        animation: openSectionAPropos .5s forwards;
+        animation: showContainer .5s forwards;
 
         pre {
             display: flex;
@@ -52,7 +53,7 @@
             code {
                 opacity: 0;
                 display: inline;
-                animation: textAparition .9s forwards;
+                animation: showContentGlitch .9s forwards;
                 text-wrap: wrap;
 
                 .code-color-purple {

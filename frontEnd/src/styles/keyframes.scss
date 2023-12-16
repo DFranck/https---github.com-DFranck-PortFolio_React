@@ -2,11 +2,15 @@
 
 @keyframes headLight {
     0% {
-        opacity: 1;
+        opacity: 0;
         transform: translateX(+10px);
         box-shadow: 0 0 4px 4px var.$purWhite;
         width: 0;
         height: 0;
+    }
+
+    10% {
+        opacity: 1;
     }
 
     75% {
@@ -75,7 +79,23 @@
     }
 }
 
-@keyframes textAparition {
+
+
+@keyframes showContent {
+
+    0%,
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes showContentGlitch {
 
     0%,
     79%,
@@ -93,7 +113,7 @@
 
 }
 
-@keyframes openSectionAPropos {
+@keyframes showContainer {
     0% {
         opacity: 0;
         width: 5px;
@@ -102,6 +122,7 @@
     }
 
     50% {
+        opacity: 1;
         box-shadow: 0 0 100px 100px var.$purWhite ;
     }
 
@@ -128,7 +149,6 @@
     100% {
         padding: 15px;
         color: var.$lightBlue;
-        overflow: auto;
         background-color: rgba(var.$purBlack, $alpha: .8);
         width: 90%;
         height: 65%;
