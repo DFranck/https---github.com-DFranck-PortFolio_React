@@ -1,0 +1,148 @@
+@use "./variables.scss" as var;
+
+@keyframes headLight {
+    0% {
+        opacity: 1;
+        transform: translateX(+10px);
+        box-shadow: 0 0 4px 4px var.$purWhite;
+        width: 0;
+        height: 0;
+    }
+
+    75% {
+        opacity: 1;
+        box-shadow: 0 0 5px 5px var.$purWhite;
+    }
+
+    100% {
+        transform: translateX(-10px);
+        box-shadow: 0 0 2px 2px var.$purWhite;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes neonFlicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow:
+            0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue,
+            0 0 50px var.$shadowBlue,
+            0 0 60px var.$shadowBlue,
+            0 0 70px var.$shadowBlue;
+        color: var.$lightBlue;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes neonFlickerButton {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 10px var.$shadowBlue, 0 0 20px var.$shadowBlue, 0 0 30px var.$shadowBlue, 0 0 40px var.$shadowBlue;
+        box-shadow: 0 0 10px var.$shadowBlue, 0 0 20px var.$shadowBlue, 0 0 30px var.$shadowBlue, 0 0 40px var.$shadowBlue, inset 0 0 10px var.$shadowBlue, inset 0 0 20px var.$shadowBlue, inset 0 0 30px var.$shadowBlue, inset 0 0 40px var.$shadowBlue;
+        color: var.$lightBlue;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+        box-shadow: none;
+        color: transparent;
+    }
+}
+
+@keyframes textAparition {
+
+    0%,
+    79%,
+    89%,
+    99% {
+        opacity: 0;
+    }
+
+    80%,
+    90%,
+    100% {
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes openSectionAPropos {
+    0% {
+        opacity: 0;
+        width: 5px;
+        height: 5px;
+        box-shadow: 0 0 10px 10px var.$purWhite ;
+    }
+
+    50% {
+        box-shadow: 0 0 100px 100px var.$purWhite ;
+    }
+
+    70% {
+        box-shadow: 0 0 50px 50px var.$purWhite
+    }
+
+    98% {
+
+        box-shadow: 0 0 400px 200px var.$purWhite
+    }
+
+    99% {
+        border: none;
+        backdrop-filter: blur(0px);
+        width: 5px;
+        height: 5px;
+        border-radius: 50px;
+        background: var.$purWhite;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    100% {
+        padding: 15px;
+        color: var.$lightBlue;
+        overflow: auto;
+        background-color: rgba(var.$purBlack, $alpha: .8);
+        width: 90%;
+        height: 65%;
+        opacity: 1;
+        border: 2px solid var.$lightBlue;
+        border-radius: 5px;
+        backdrop-filter: blur(2px);
+        box-shadow:
+            0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue,
+            inset 0 0 10px var.$shadowBlue,
+            inset 0 0 20px var.$shadowBlue ;
+
+    }
+}

@@ -1,4 +1,5 @@
 @use '../../../styles/variables.scss' as var;
+@import '../../../styles/keyframes.scss';
 
 .button {
     cursor: pointer;
@@ -17,6 +18,7 @@
         inset 0 0 30px var.$shadowBlue,
         inset 0 0 40px var.$shadowBlue;
     ;
+    backdrop-filter: blur(5px);
     border-radius: 5px;
     color: rgb(231, 238, 240);
     font-size: 2rem;
@@ -46,29 +48,4 @@
     }
 
     animation: neonFlickerButton 3s infinite;
-}
-
-
-@keyframes neonFlickerButton {
-
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-        text-shadow: 0 0 10px var.$shadowBlue, 0 0 20px var.$shadowBlue, 0 0 30px var.$shadowBlue, 0 0 40px var.$shadowBlue;
-        box-shadow: 0 0 10px var.$shadowBlue, 0 0 20px var.$shadowBlue, 0 0 30px var.$shadowBlue, 0 0 40px var.$shadowBlue, inset 0 0 10px var.$shadowBlue, inset 0 0 20px var.$shadowBlue, inset 0 0 30px var.$shadowBlue, inset 0 0 40px var.$shadowBlue;
-        color: var.$lightBlue;
-    }
-
-    20%,
-    24%,
-    55% {
-        text-shadow: none;
-        box-shadow: none;
-        color: transparent;
-    }
 }

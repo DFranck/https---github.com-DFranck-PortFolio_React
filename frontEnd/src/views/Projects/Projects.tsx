@@ -8,10 +8,16 @@ export const Project = () => {
   return (
     <main className="projects">
       <Hero />
-      <section>
-        <h1>Projects</h1>
-        <ProjectsCards />
+      <h1>Franck Dufournet PortFolio Projets Publique</h1>
+      <span className="head-light"></span>
+      <section className="figure">
+        <figure>
+          <figcaption>
+            <h2>title</h2>
+          </figcaption>
+        </figure>
       </section>
+      {/* <section className="details"></section> */}
     </main>
   );
 };

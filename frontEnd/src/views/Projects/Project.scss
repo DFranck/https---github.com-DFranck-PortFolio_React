@@ -1,7 +1,45 @@
-.projects {
-    section {
-        width: 100vw;
+@use '../../styles/variables.scss' as var;
 
-        h1 {}
+.projects {
+
+    h1 {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    span.head-light {
+        display: block;
+        position: absolute;
+        top: 55.5%;
+        left: 50%;
+        animation: headLight 1.2s infinite;
+    }
+
+    section {
+        position: absolute;
+        color: var.$lightBlue;
+        top: 55.5%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 20px;
+        height: 5px;
+        opacity: 0;
+        border: 2px solid var.$lightBlue;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        animation: openFigureSection 1.5s forwards;
+        box-shadow:
+            0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue,
+            inset 0 0 10px var.$shadowBlue,
+            inset 0 0 20px var.$shadowBlue,
+        ;
+
     }
 }

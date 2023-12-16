@@ -4,6 +4,24 @@
     position: relative;
     perspective: 1000px;
 
+    span.head-light {
+        display: block;
+        position: absolute;
+        top: 55.5%;
+        left: 50%;
+        animation: headLight 1.2s infinite;
+    }
+
+    h1 {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+
     section {
         cursor: pointer;
         animation: neonFlicker 3s infinite;
@@ -13,6 +31,7 @@
         text-align: center;
         border-radius: 5px;
         padding: 20px;
+        border: 3px solid var.$lightBlue;
         backdrop-filter: blur(5px);
         background-color: rgba(var.$purBlack, $alpha: .2);
         box-shadow:
@@ -82,36 +101,9 @@
         }
     }
 
-    a:nth-child(2) {
+    a:nth-child(4) {
         top: 48%;
+        left: 50%;
 
-    }
-}
-
-@keyframes neonFlicker {
-
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-        text-shadow:
-            0 0 10px var.$shadowBlue,
-            0 0 20px var.$shadowBlue,
-            0 0 30px var.$shadowBlue,
-            0 0 40px var.$shadowBlue,
-            0 0 50px var.$shadowBlue,
-            0 0 60px var.$shadowBlue,
-            0 0 70px var.$shadowBlue;
-        color: var.$lightBlue;
-    }
-
-    20%,
-    24%,
-    55% {
-        text-shadow: none;
     }
 }

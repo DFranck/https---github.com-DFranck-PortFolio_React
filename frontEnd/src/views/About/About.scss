@@ -1,29 +1,29 @@
 @use '../../styles/variables.scss' as var;
 
 .about {
+    h1 {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    span.head-light {
+        display: block;
+        position: absolute;
+        top: 55.5%;
+        left: 50%;
+        animation: headLight 1.2s infinite;
+    }
 
     section {
         position: absolute;
-        color: var.$lightBlue;
         top: 55.5%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        width: 20px;
-        height: 5px;
-        opacity: 0;
-        border: 2px solid var.$lightBlue;
-        border-radius: 5px;
-        backdrop-filter: blur(5px);
-        animation: openSection 1.5s forwards;
-        box-shadow:
-            0 0 10px var.$shadowBlue,
-            0 0 20px var.$shadowBlue,
-            0 0 30px var.$shadowBlue,
-            0 0 40px var.$shadowBlue,
-            inset 0 0 10px var.$shadowBlue,
-            inset 0 0 20px var.$shadowBlue,
-        ;
-
+        transform: translate(-50%, -45%) scale(1);
+        animation: openSectionAPropos .5s forwards;
 
         pre {
             display: flex;
@@ -52,8 +52,7 @@
             code {
                 opacity: 0;
                 display: inline;
-                animation: textAparition .5s forwards;
-                animation-delay: 1.5s;
+                animation: textAparition .9s forwards;
                 text-wrap: wrap;
 
                 .code-color-purple {
@@ -86,80 +85,5 @@
 
             }
         }
-    }
-}
-
-
-
-@keyframes textAparition {
-
-
-    0%,
-    79%,
-    89%,
-    99% {
-        opacity: 0;
-    }
-
-    80%,
-    90%,
-    100% {
-        opacity: 1;
-
-    }
-
-}
-
-@keyframes openSection {
-
-    0% {
-        width: 500px;
-        height: 500px;
-        border-radius: 500px;
-        background-color: var.$purWhite;
-        box-shadow:
-            0 0 10px var.$purWhite,
-            0 0 20px var.$purWhite,
-            0 0 30px var.$purWhite,
-            0 0 40px var.$purWhite,
-            0 0 100px var.$purWhite;
-    }
-
-    50% {
-        width: 20px;
-        height: 5px;
-        border-radius: 5px;
-    }
-
-    70% {
-        box-shadow:
-            0 0 20px var.$purWhite,
-            0 0 40px var.$purWhite,
-            0 0 60px var.$purWhite,
-            0 0 80px var.$purWhite;
-        background-color: var.$purWhite;
-        opacity: 1;
-    }
-
-    80% {
-        height: 5px;
-        transform: translate(-50%, -50%) scale(1);
-        background-color: var.$purWhite;
-        opacity: 1;
-    }
-
-    90% {
-        padding: 0;
-        overflow: hidden;
-    }
-
-    100% {
-        width: 90%;
-        height: 65%;
-        transform: translate(-50%, -45%) scale(1);
-        background-color: rgba(var.$purBlack, $alpha: .5);
-        opacity: 1;
-        padding: 20px;
-        overflow-y: auto;
     }
 }

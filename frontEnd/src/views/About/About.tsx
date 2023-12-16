@@ -15,6 +15,8 @@ export const About = () => {
   return (
     <main className="about">
       <Hero />
+      <h1>Franck Dufournet PortFolio A Propos</h1>
+      <span className="head-light"></span>
       <section>
         <pre>
           <code className="ide">
@@ -36,7 +38,7 @@ export const About = () => {
             <br />
             {cG('"React.js"')}, {cG('"Redux.js"')}, {cG('"RTK"')},{" "}
             {cG('"Hooks React"')}, {cG('"JavaScript"')}, {cG('"Tests"')},{" "}
-            {cG('"HTML5"')}, {cG('"CSS3/Sass"')}, {cG('"TypeScGipt"')},{" "}
+            {cG('"HTML5"')}, {cG('"CSS3/Sass"')}, {cG('"TypeScript"')},{" "}
             {cG('"API REST"')}, {cG('"CRUD"')}, {cG('"Algorithmes"')},{" "}
             {cG('"Méthodes agiles"')}
             <br />

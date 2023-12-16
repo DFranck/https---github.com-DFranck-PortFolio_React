@@ -44,31 +44,3 @@ nav {
         animation-delay: 0.8s;
     }
 }
-
-@keyframes neonFlicker {
-
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-        text-shadow:
-            0 0 10px var.$shadowBlue,
-            0 0 20px var.$shadowBlue,
-            0 0 30px var.$shadowBlue,
-            0 0 40px var.$shadowBlue,
-            0 0 50px var.$shadowBlue,
-            0 0 60px var.$shadowBlue,
-            0 0 70px var.$shadowBlue;
-        color: var.$lightBlue;
-    }
-
-    20%,
-    24%,
-    55% {
-        text-shadow: none;
-    }
-}

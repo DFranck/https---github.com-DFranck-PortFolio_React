@@ -26,3 +26,22 @@ $colorComment: #7F848E; // Gris pour les commentaires
 $colorType: #E06C75; // Rouge pour les types et les classes
 $colorNumber: #D19A66; // Orange pour les nombres
 $colorOperator: #56B6C2; // Cyan pour les opérateurs
+
+:root {
+    --pur-black: #000000;
+    --pur-white: #ffffff;
+
+    --light-blue: rgb(234, 253, 227);
+    --shadow-blue: rgb(33, 143, 181);
+    --light-pink: rgb(251, 248, 252);
+    --shadow-pink: rgb(156, 84, 158);
+
+    --color-function: #C678DD;
+    --color-variable: #E5C07B;
+    --color-string: #98C379;
+    --color-keyword: #61AFEF;
+    --color-comment: #7F848E;
+    --color-type: #E06C75;
+    --color-number: #D19A66;
+    --color-operator: #56B6C2;
+}

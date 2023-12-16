@@ -11,6 +11,8 @@ export const Home = () => {
   return (
     <main className="home">
       <Hero />
+      <h1>Franck Dufournet PortFolio Accueil</h1>
+      <span className="head-light"></span>
       <Link to="/projects">{title.h1}</Link>
       <Link to="/about">{title.h2}</Link>
       <section

@@ -1,9 +1,29 @@
-.cards-projects {
-    display: flex;
-    flex-wrap: wrap;
+@use '../../styles/variables.scss' as var;
 
-    .card-project {
-        width: 30%;
-        height: 30%;
+.cards-projects {
+    background: var.$purBlack;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+    article {
+        color: var.$lightBlue;
+        width: 100vw;
+        height: 100vh;
+
+        figure {
+            position: relative;
+
+            img {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+
+            figcaption {
+                position: absolute;
+                top: 0;
+            }
+        }
     }
 }
