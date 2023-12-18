@@ -30,12 +30,17 @@
             display: flex;
             gap: 20px;
 
+            @media screen and (max-width: 1200px) {
+                text-align: justify;
+            }
+
             @media screen and (max-width: 1400px) {
                 display: block;
             }
 
             .ide {
                 width: 70%;
+
 
                 @media screen and (max-width: 1400px) {
                     width: 100%;
@@ -48,6 +53,7 @@
                 @media screen and (max-width: 1400px) {
                     width: 100%;
                 }
+
             }
 
             code {
@@ -56,35 +62,39 @@
                 animation: showContentGlitch .9s forwards;
                 text-wrap: wrap;
 
-                .code-color-purple {
-                    color: var.$colorFunction
-                }
 
-                .code-color-yellow {
-                    color: var.$colorVariable;
-                }
-
-                .code-color-blue {
-                    color: var.$colorKeyword;
-                }
-
-                .code-color-red {
-                    color: var.$colorType;
-                }
-
-                .code-color-orange {
-                    color: var.$colorNumber;
-                }
-
-                .code-color-cyan {
-                    color: var.$colorOperator;
-                }
-
-                .code-color-green {
-                    color: var.$colorString;
-                }
 
             }
+
+            .code-color-purple {
+                color: var.$colorFunction
+            }
+
+            .code-color-yellow {
+                color: var.$colorVariable;
+            }
+
+            .code-color-blue {
+                color: var.$colorKeyword;
+            }
+
+            .code-color-red {
+                color: var.$colorType;
+            }
+
+            .code-color-orange {
+                color: var.$colorNumber;
+            }
+
+            .code-color-cyan {
+                color: var.$colorOperator;
+            }
+
+            .code-color-green {
+                color: var.$colorString;
+            }
+
         }
     }
+
 }

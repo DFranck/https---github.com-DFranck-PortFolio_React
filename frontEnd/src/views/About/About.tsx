@@ -26,7 +26,7 @@ export const About = () => {
             <br />
             {cR("prenom")}: {cG('"Franck"')},
             <br />
-            {cR("titre")}: {cG('"Développeur REACT.js"')},
+            {cR("name")}: {cG('"Développeur REACT.js"')},
             <br />
             {cR("description")}:{" "}
             {cG(
@@ -56,7 +56,7 @@ export const About = () => {
             {"}"};
             <br />
             <br />
-            {cP("const")} {cY("formation")} = {"{"}
+            {cP("const")} {cY("client")} = {"{"}
             <br />
             {cR("organisme")}: {cG('"OpenClassrooms"')},
             <br />
@@ -68,7 +68,7 @@ export const About = () => {
             <br />
             {cR("projets")}:{" ["}
             <br />
-            {cG('"Prenez en main votre formation front-end"')},{" "}
+            {cG('"Prenez en main votre client front-end"')},{" "}
             {cG('"Transformez une maquette en site web avec HTML & CSS"')},{" "}
             {cG('"Dynamisez une page web avec des animations CSS"')},
             {cG('"Créez une landing page avec Javascript"')},{" "}
@@ -104,7 +104,7 @@ export const About = () => {
           <code className="console">
             Bonjour, je suis Franck Dufournet, un Développeur Web Freelance. Mon
             parcours dans le développement web est marqué par une série de
-            formations et certifications approfondies, notamment avec
+            clients et certifications approfondies, notamment avec
             OpenClassrooms. J'ai acquis des compétences clés en React.js,
             JavaScript, HTML5, CSS3, et TypeScript, ainsi qu'une expertise en
             Redux.js, API REST, et Tests divers. Parmi mes certifications, je

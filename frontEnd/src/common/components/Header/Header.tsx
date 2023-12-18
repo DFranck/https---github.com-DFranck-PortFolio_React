@@ -7,7 +7,8 @@ export const Header = () => {
   return (
     <header>
       <Nav />
-      <Button text="Sign In" />
+
+      <Button className="sign-in" text="Sign In" />
     </header>
   );
 };

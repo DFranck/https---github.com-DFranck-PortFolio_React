@@ -1,0 +1,28 @@
+@use '../../styles/variables.scss' as var;
+
+.CRUD-projects {
+    position: relative;
+
+    section.preview-container {
+        width: 50%;
+        height: 65%;
+        top: 26%;
+        right: 5%;
+        position: absolute;
+        padding: 0 !important;
+        backdrop-filter: blur(2px);
+        background-color: rgba(var.$purBlack, 0.8);
+        border: 3px solid var.$lightBlue;
+        border-radius: 5px;
+        box-shadow:
+            0 0 10px var.$shadowBlue,
+            0 0 20px var.$shadowBlue,
+            0 0 30px var.$shadowBlue,
+            0 0 40px var.$shadowBlue ,
+            inset 0 0 10px var.$shadowBlue,
+            inset 0 0 20px var.$shadowBlue,
+            inset 0 0 30px var.$shadowBlue,
+            inset 0 0 40px var.$shadowBlue ;
+    }
+
+}

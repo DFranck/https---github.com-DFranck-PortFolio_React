@@ -1,7 +1,6 @@
 import React from "react";
 import "./Project.scss";
 import { Hero } from "../../common/components/Hero/Hero";
-// import { ProjectsCards } from "../../features/projects/ProjectsCards";
 import { useGetProjectsQuery } from "../../services/projectsApi";
 import { ProjectsCarrousel } from "../../features/projects/components/ProjectsCarrousel";
 export const Project = () => {

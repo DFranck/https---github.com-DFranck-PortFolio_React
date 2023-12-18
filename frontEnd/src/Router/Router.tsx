@@ -5,6 +5,7 @@ import { About } from "../views/About/About";
 import { Header } from "../common/components/Header/Header";
 import { Footer } from "../common/components/Footer/Footer";
 import { Project } from "../views/Projects/Projects";
+import { CRUDProjects } from "../views/CRUDprojects/CRUDprojects";
 export const AppRouter = () => {
   return (
     <Router>
@@ -13,6 +14,7 @@ export const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Project />} />
+        <Route path="/CRUDprojects" element={<CRUDProjects />} />
       </Routes>
       <Footer />
     </Router>

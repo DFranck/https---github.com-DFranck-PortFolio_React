@@ -1,0 +1,75 @@
+[
+  
+  {
+        "titre": "Fisheye",
+        "image": "./assets/img/Fisheye.jpg",
+        "formation":"OpenClassromm",
+        "description": "Créez un site accessible pour une plateforme de photographes.",
+        "technologies": ["HTML", "CSS", "Javascript", "EsLint", "WCAG"],
+        "lienGitHub": "https://github.com/DFranck/Formation-OpenClassroom-Projet6",
+        "lienProjet": "https://fishereye.netlify.app"
+      },
+  {
+        "titre": "Premier Projet React",
+        "image": "./assets/img/Firstreact.jpg",
+        "formation":"FromScratch",
+        "description": "Premier projet en react, une petite appli qui fait appel a une API de pays.",
+        "technologies": ["HTML", "CSS", "React JS"],
+        "lienGitHub": "https://github.com/DFranck/First_React",
+        "lienProjet": "https://first-react-d-franck.netlify.app/"
+      },
+    {
+        "titre": "plopyBird",
+        "image": "./assets/img/Plopybird.jpeg",
+        "formation":"FromScratch",
+        "description": "Petit jeu en Vanilla Javascript, une copie de flappybird. J'ai ajouté la possibilité de régler certain parametre pour adapter la difficulté ou juste s'adapter au divice utilisé.",
+        "technologies": ["HTML", "CSS", "Javascript"],
+        "lienGitHub": "https://github.com/DFranck/FlappyBirdApp",
+        "lienProjet": "https://dfranck.github.io/FlappyBirdApp/"
+      },
+    {
+      "titre": "ohmyfood",
+      "image": "./assets/img/ohmyfood.jpg",
+      "formation":"OpenClassromm",
+      "description": "Ohmyfood est une entreprise de commande de repas en ligne. Leur concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d'attente dans les restaurants, car leur menu est préparé à l'avance. Plus de perte de temps à consulter la carte !",
+      "technologies": ["HTML", "CSS", "SASS"],
+      "lienGitHub": "https://github.com/DFranck/Formation-OpenClassroom-Projet3",
+      "lienProjet": "https://dfranck.github.io/Formation-OpenClassroom-Projet3/"
+    },
+    {
+        "titre": "Booki",
+        "image": "./assets/img/Booki.jpg",
+        "description":"Booki est une plateforme de réservation en ligne compacte et innovante, offrant des services de voyage simplifiés. Idéale pour des réservations d'hôtels et d'activitées rapides, elle privilégie la facilité d'utilisation et la rapidité pour une expérience de voyage sans stress.",
+        "technologies": ["HTML", "CSS"],
+        "lienGitHub":
+        "https://github.com/DFranck/Formation-OpenClassromm/tree/main/Projet%202",
+        "lienProjet": ""
+    },
+    {
+        "titre": "Le Resto",
+        "image": "./assets/img/Le Resto.jpg",
+        "description": "Le Resto est un tout nouveau restaurant, offrant une expérience gastronomique unique. Avec une large gamme de plats soigneusement préparés, Le Resto redéfinit le plaisir de manger.",
+        "technologies": ["HTML", "CSS", "SASS"],
+        "lienGitHub":
+        "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP2",
+        "lienProjet": ""
+    },
+    {
+        "titre": "La montagne",
+        "image": "./assets/img/La montagne.jpg",
+        "description":"La Montagne est votre guide numérique dédié aux sentiers de randonnée, offrant une exploration détaillée des parcours de montagne les plus spectaculaires. Planifiez vos aventures avec précision, découvrez de nouveaux panoramas époustouflants et connectez-vous avec la nature de manière plus profonde.",
+        "technologies": ["HTML", "CSS", "SASS"],
+        "lienGitHub":
+        "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP1",
+        "lienProjet": ""
+    },
+    {
+        "titre": "Gaming Campus",
+        "image": "./assets/img/Gaming Campus.jpg",
+        "description": "Gaming Campus est un portail d'apprentissage dédié à la formation des joueurs professionnels de demain. Nous proposons des cours couvrant tous les aspects du gaming, de la stratégie aux techniques de jeu, dans une variété de genres de jeux populaires. Préparez-vous à améliorer vos compétences et à entrer dans l'arène du gaming compétitif.",
+      "technologies": ["HTML", "CSS"],
+      "lienGitHub":
+      "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/CSS/CSS%20TP5%20int%C3%A9gration%20gaming%20campus",
+      "lienProjet": ""
+    }
+]

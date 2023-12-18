@@ -1,16 +1,24 @@
+@use '../../../styles/variables.scss' as var;
+
 header {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 1;
+    padding: 3rem;
 
-    nav {
-        margin: 3rem;
-    }
 
-    button {
-        margin: 3rem;
+
+
+    button.sign-in {
+
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+
+
     }
 }

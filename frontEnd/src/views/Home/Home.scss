@@ -45,6 +45,18 @@
             0 0 30px var.$shadowBlue,
             0 0 40px var.$shadowBlue;
 
+        h2 {
+            @media screen and (max-width: 992px) {
+                font-size: 1rem;
+
+            }
+
+            @media screen and (max-width:768px) {
+                display: none;
+
+            }
+        }
+
         &:hover {
             color: var.$lightPink;
             box-shadow:
@@ -64,6 +76,10 @@
             left: 25%;
             transform: translate(-50%, -50%)perspective(600px) rotateX(10deg) rotateY(60deg);
             animation-delay: 0.2s;
+
+            @media screen and (max-width:768px) {
+                left: 18%
+            }
         }
 
         &.linkedin {
@@ -71,18 +87,24 @@
             left: 75%;
             transform: translate(-50%, -50%)perspective(600px) rotateX(10deg) rotateY(-60deg);
             animation-delay: 0.4s;
+
+            @media screen and (max-width:768px) {
+                left: 82%
+            }
         }
 
         i {
-            font-size: 5rem;
+            font-size: 4rem;
             color: var.$lightPink;
         }
+
     }
 
     a {
         transition: .1s;
         color: var.$lightPink;
         position: absolute;
+
         top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -98,6 +120,10 @@
         &:hover {
             transform: translate(-50%, -50%);
             animation: neonFlicker 3s infinite;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
         }
     }
 
