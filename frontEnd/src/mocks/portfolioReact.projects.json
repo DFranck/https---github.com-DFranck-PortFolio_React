@@ -1,0 +1,136 @@
+[
+  {
+    "_id": {
+      "$oid": "657c8b523961b8fea42b2b4b"
+    },
+    "description": "Créez un site accessible pour une plateforme de photographes.",
+    "technologies": ["HTML", "CSS", "Javascript", "EsLint", "WCAG"],
+    "client": "OpenClassromm",
+    "imgURL": "Fisheye.jpg",
+    "links": {
+      "github": "https://github.com/DFranck/Formation-OpenClassroom-Projet6",
+      "website": "https://fishereye.netlify.app"
+    },
+    "name": "Fisheye"
+  },
+  {
+    "_id": {
+      "$oid": "657c8b523961b8fea42b2b4d"
+    },
+    "description": "Petit jeu en Vanilla Javascript, une copie de flappybird. J'ai ajouté la possibilité de régler certain parametre pour adapter la difficulté ou juste s'adapter au divice utilisé.",
+    "technologies": ["HTML", "CSS", "Javascript"],
+    "client": "FromScratch",
+    "imgURL": "Plopybird.jpeg",
+    "links": {
+      "github": "https://github.com/DFranck/FlappyBirdApp",
+      "website": "https://dfranck.github.io/FlappyBirdApp/"
+    },
+    "name": "plopyBird"
+  },
+  {
+    "_id": {
+      "$oid": "657c8b523961b8fea42b2b4e"
+    },
+    "description": "Ohmyfood est une entreprise de commande de repas en ligne. Leur concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d'attente dans les restaurants, car leur menu est préparé à l'avance. Plus de perte de temps à consulter la carte !",
+    "technologies": ["HTML", "CSS", "SASS"],
+    "client": "OpenClassromm",
+    "imgURL": "ohmyfood.jpg",
+    "links": {
+      "github": "https://github.com/DFranck/Formation-OpenClassroom-Projet3",
+      "website": "https://dfranck.github.io/Formation-OpenClassroom-Projet3/"
+    },
+    "name": "ohmyfood"
+  },
+  {
+    "_id": {
+      "$oid": "657c8b523961b8fea42b2b4f"
+    },
+    "description": "Booki est une plateforme de réservation en ligne compacte et innovante, offrant des services de voyage simplifiés. Idéale pour des réservations d'hôtels et d'activitées rapides, elle privilégie la facilité d'utilisation et la rapidité pour une expérience de voyage sans stress.",
+    "technologies": ["HTML", "CSS"],
+    "imgURL": "Booki.jpg",
+    "links": {
+      "github": "https://github.com/DFranck/Formation-OpenClassromm/tree/main/Projet%202",
+      "website": "https://dfranck.github.io/Formation-OpenClassroom-Projet2/#hebergements"
+    },
+    "name": "Booki"
+  },
+  {
+    "_id": {
+      "$oid": "657c8b523961b8fea42b2b50"
+    },
+    "description": "Le Resto est un tout nouveau restaurant, offrant une expérience gastronomique unique. Avec une large gamme de plats soigneusement préparés, Le Resto redéfinit le plaisir de manger.",
+    "technologies": ["HTML", "CSS", "SASS"],
+    "imgURL": "Le Resto.jpg",
+    "links": {
+      "github": "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP2"
+    },
+    "name": "Le Resto"
+  },
+  {
+    "_id": {
+      "$oid": "657c8b523961b8fea42b2b51"
+    },
+    "description": "La Montagne est votre guide numérique dédié aux sentiers de randonnée, offrant une exploration détaillée des parcours de montagne les plus spectaculaires. Planifiez vos aventures avec précision, découvrez de nouveaux panoramas époustouflants et connectez-vous avec la nature de manière plus profonde.",
+    "technologies": ["HTML", "CSS", "SASS"],
+    "imgURL": "La montagne.jpg",
+    "links": {
+      "github": "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/SASS/SASS%20TP1"
+    },
+    "name": "La montagne"
+  },
+  {
+    "_id": {
+      "$oid": "657c8b523961b8fea42b2b52"
+    },
+    "description": "Gaming Campus est un portail d'apprentissage dédié à la formation des joueurs professionnels de demain. Nous proposons des cours couvrant tous les aspects du gaming, de la stratégie aux techniques de jeu, dans une variété de genres de jeux populaires. Préparez-vous à améliorer vos compétences et à entrer dans l'arène du gaming compétitif.",
+    "technologies": ["HTML", "CSS"],
+    "imgURL": "Gaming Campus.jpg",
+    "links": {
+      "github": "https://github.com/DFranck/Formation-Mastering-Front-End/tree/master/CSS/CSS%20TP5%20int%C3%A9gration%20gaming%20campus"
+    },
+    "name": "Gaming Campus"
+  },
+  {
+    "_id": {
+      "$oid": "658f9e3fd99503f184694973"
+    },
+    "client": "Les Petits Plats",
+    "purpose": "Développez un algorithme de recherche en JavaScript",
+    "duration": "3 mois",
+    "description": "C'était un projet captivant visant à créer une expérience utilisateur unique avec un moteur de recherche de recettes rapide et intuitif. Le défi était de construire un algorithme de recherche efficace pour naviguer à travers un vaste ensemble de recettes, en l'absence d'une équipe backend dédiée. Le projet a impliqué le développement de deux implémentations distinctes de l'algorithme, en utilisant des boucles natives et des méthodes d'array fonctionnelles, pour évaluer leurs performances respectives.",
+    "technologies": ["HTML", "SASS", "Javascript", "EsLint"],
+    "imgURL": "LesPetitsPlats.png",
+    "links": {
+      "github": "https://github.com/DFranck/Formation-OpenClassroom-Projet7",
+      "website": "https://dfranck.github.io/Formation-OpenClassroom-Projet7/"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "658fa6f9d99503f184694974"
+    },
+    "client": "Kasa",
+    "purpose": "Développez une application Web avec React et React Router",
+    "description": "Le projet Kasa représente une avancée remarquable dans la création d'applications web modernes, combinant la puissance de React et React Router pour offrir une expérience utilisateur fluide et réactive. Inspiré par des plateformes de location de logements de renom, le but était de créer une interface intuitive avec des fonctionnalités client interactives comme un carrousel d'images et des menus déroulants dynamiques. La réalisation de ce projet a permis d'appliquer des compétences avancées en React pour structurer une application en composants réutilisables, tout en intégrant React Router pour une navigation fluide entre les pages. La mise en œuvre de SASS a permis d'affiner les styles visuels, garantissant ainsi que l'application soit non seulement fonctionnelle mais aussi esthétiquement agréable. En définitive, ce projet a démontré la capacité à transformer des maquettes de haute fidélité en une application web vivante, en adhérant à des principes de codage stricts pour assurer une qualité de code irréprochable et un produit final optimisé.",
+    "technologies": ["React", "React-Router", "SASS", "EsLint"],
+    "imgURL": "Kasa.jpg",
+    "links": {
+      "github": "https://github.com/DFranck/kasa-react",
+      "website": "https://kasabnb.netlify.app/"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "658fac3dd99503f184694975"
+    },
+    "client": "SportSee",
+    "purpose": "Développez un tableau de bord d'analytics avec React",
+    "description": "La refonte du profil utilisateur de SportSee était une aventure fascinante dans le développement basé sur React, axée sur une interface utilisateur intuitive pour suivre les progrès sportifs. Le projet reposait sur Recharts pour la visualisation des données, offrant une expérience riche et interactive. Le projet a donné la priorité à l'optimisation du bureau, en respectant une résolution d'écran minimale de 1 024 x 780 pixels. Une API fictive a été initialement utilisée, progressant vers l'intégration de données en direct avec une attention méticuleuse à la standardisation des schémas de données pour une API cohérente.",
+    "technologies": ["React", "Recharts", "SASS", "EsLint"],
+    "imgURL": "SportSee.png",
+    "links": {
+      "github": "https://github.com/DFranck/SportSee",
+      "website": "https://sportsee-site.netlify.app/"
+    }
+  }
+]

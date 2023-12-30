@@ -23,7 +23,20 @@ export const crudSlice = createSlice({
       state.technologies = action.payload.Technologies;
       state.links = action.payload.Links;
       state.imgURL = action.payload.ImgURL;
-      console.log("setcurrentproject: ", state.currentProject);
+      console.log(
+        "setcurrentproject: ",
+        state.currentProject,
+        state.name,
+        state.client,
+        state.description,
+        state.technologies,
+        state.links,
+        state.imgURL
+      );
+    },
+    setCurrentProjetIndex: (state, action) => {
+      state.currentProject = action.payload;
+      console.log("setcurrentprojectindex: ", state.currentProject);
     },
     setName: (state, action) => {
       state.name = action.payload;
@@ -62,4 +75,5 @@ export const {
   setLinks,
   setImgURL,
   setCurrentProject,
+  setCurrentProjetIndex,
 } = crudSlice.actions;

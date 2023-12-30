@@ -56,7 +56,7 @@ export const About = () => {
             {"}"};
             <br />
             <br />
-            {cP("const")} {cY("client")} = {"{"}
+            {cP("const")} {cY("formation")} = {"{"}
             <br />
             {cR("organisme")}: {cG('"OpenClassrooms"')},
             <br />

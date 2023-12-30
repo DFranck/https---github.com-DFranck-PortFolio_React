@@ -1,4 +1,4 @@
-import models from "../../../common/models";
+import models from "../../../../../common/models";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {
@@ -8,7 +8,7 @@ import {
   setTechnologies,
   setLinks,
   setImgURL,
-} from "../crudSlice";
+} from "../../../crudSlice";
 export const CreateProjetsInputs = () => {
   const dispatch = useDispatch();
   const [newTechnologies, setNewTechnologies] = useState(["add technologies"]);

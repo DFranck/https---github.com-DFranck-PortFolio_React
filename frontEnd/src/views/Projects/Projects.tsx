@@ -2,9 +2,10 @@ import React from "react";
 import "./Project.scss";
 import { Hero } from "../../common/components/Hero/Hero";
 import { useGetProjectsQuery } from "../../services/projectsApi";
-import { ProjectsCarrousel } from "../../features/projects/components/ProjectsCarrousel";
+import { ProjectsCarrousel } from "../../features/projects/components/Carrousel/ProjectsCarrousel";
 export const Project = () => {
-  useGetProjectsQuery({});
+  useGetProjectsQuery();
+
   return (
     <main className="projects">
       <Hero />

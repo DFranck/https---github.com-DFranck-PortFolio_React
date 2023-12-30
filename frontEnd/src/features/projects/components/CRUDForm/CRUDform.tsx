@@ -1,8 +1,8 @@
-import { Button } from "../../../common/components/Button/Button";
-import { CreateProjetsInputs } from "./CreateProjetsInputs";
+import { Button } from "../../../../common/components/Button/Button";
+import { CreateProjetsInputs } from "./CreateProjetsInputs/CreateProjetsInputs";
 import { useState } from "react";
 import "./CRUDform.scss";
-import { UpdateForm } from "./UpdateForm";
+import { UpdateForm } from "./UpdateForm/UpdateForm";
 export const CRUDform = () => {
   const [requestType, setRequestType] = useState("create");
   const [formInputs, setFormInputs] = useState(<CreateProjetsInputs />);

@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { projectsApi } from "../services/projectsApi";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { crudSlice } from "../features/CRUDfrom/crudSlice";
+import { crudSlice } from "../features/projects/crudSlice";
 
 export const store = configureStore({
   reducer: combineReducers({

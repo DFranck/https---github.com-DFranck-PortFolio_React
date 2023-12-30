@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import { RootState } from "../../../app/store";
+import { RootState } from "../../../../../app/store";
+import { useDispatch } from "react-redux";
 import {
   setName,
   setClient,
@@ -8,17 +9,13 @@ import {
   // setTechnologies,
   setLinks,
   setImgURL,
-} from "../crudSlice";
-import { useDispatch } from "react-redux";
+} from "../../../crudSlice";
 export const UpdateForm = () => {
+  const [addTechnologies, setAddTechnologies] = useState([]);
   const dispatch = useDispatch();
-  const crudData = useSelector((state: RootState) => state.crud);
-  const projectsData = useSelector(
-    (state: RootState) => state.api.queries["getProjects({})"]?.data
-  );
-  const [technologies, setTechnologies] = useState(
-    projectsData[crudData.currentProject].technologies
-  );
+  const isData = useSelector((state: RootState) => state.crud);
+  console.log("isData:", isData);
+
   const handleInputChange = (e) => {
     switch (e.target.id) {
       case "name":
@@ -44,9 +41,10 @@ export const UpdateForm = () => {
     }
     console.log(e.target.value);
   };
-  const UpdateForm = Object.keys(projectsData[crudData.currentProject]).flatMap(
-    (key: string) => {
-      const value = projectsData[crudData.currentProject][key];
+  const UpdateForm =
+    isData &&
+    Object.keys(isData).flatMap((key: string) => {
+      const value = isData[key];
       if (key === "description") {
         return (
           <>
@@ -88,14 +86,14 @@ export const UpdateForm = () => {
                 className="add-technologies"
                 type="button"
                 onClick={() =>
-                  setTechnologies([...technologies, "add technologies"])
+                  setAddTechnologies([...addTechnologies, "add techno"])
                 }
               >
                 +
               </button>
             </div>
             <div className="technologies">
-              {technologies.map((value: string, index: number) => (
+              {addTechnologies.map((value: string, index: number) => (
                 <input
                   key={"input" + index}
                   id={"tech" + index}
@@ -121,15 +119,6 @@ export const UpdateForm = () => {
           </>
         );
       }
-    }
-  );
-  // const sortUpdateForm = (UpdateForm) => {
-  //   const sortArray = [7, 5, 3, 4, 6, 1, 2];
-  //   const SortUpdateForm = UpdateForm.sort(
-  //     (a, b) => sortArray.indexOf(a) - sortArray.indexOf(b)
-  //   );
-  //   return SortUpdateForm;
-  // };
-  // sortUpdateForm(UpdateForm);
+    });
   return <>{UpdateForm}</>;
 };

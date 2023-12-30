@@ -3,11 +3,7 @@ import "./CRUDpreview.scss";
 import { RootState } from "../../../app/store";
 export const CRUDpreview = () => {
   const crudData = useSelector((state: RootState) => state.crud);
-
-  const formatedData = useSelector(
-    (state: RootState) => state.api.queries["getProjects({})"]?.data
-  );
-  return formatedData && crudData.currentProject >= 0 ? (
+  return crudData.currentProject >= 0 ? (
     <article>
       <figure>
         <img
